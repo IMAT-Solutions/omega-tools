@@ -1,0 +1,49 @@
+{
+  "name": "@imat/omegatools",
+  "version": "2.1.12",
+  "description": "Tools for applications that use the Omega Project.",
+  "main": "index.js",
+  "bin": {
+    "omega": "./bin/omega.js"
+  },
+  "scripts": {
+    "debug-mocha": "node --inspect-brk node_modules/mocha/bin/_mocha --reporter tap \"lib/**/*.mocha.js\"",
+    "lint": "eslint \"./bin/*.js\" \"./lib/**/*.js\"",
+    "test": "npm run lint && npm run test-mocha",
+    "test-mocha": "nyc --nycrc-path test/.nycrc-mocha.json ./node_modules/.bin/_mocha \"lib/**/*.mocha.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IMAT-Solutions/omega-tools.git"
+  },
+  "author": "IMAT Solutions <software@imatsolutions.com>",
+  "contributors": [
+    "Michael Collins <michael.collins@imatsolutions.com>",
+    "Jeremy Workman <jeremy.workman@imatsolutions.com>",
+    "Richard Frost <richard.frost@imatsolutions.com>"
+  ],
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@imat/omegalib": "git+https://github.com/IMAT-Solutions/omega-lib.git#v2.0.5",
+    "acorn": "^7.0.0",
+    "debug": "^4.1.1",
+    "keypress": "^0.2.1",
+    "less": "^3.9.0",
+    "micromatch": "^4.0.2",
+    "minimist": "^1.2.0",
+    "node-watch": "^0.6.2",
+    "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "chai": "^4.2.0",
+    "eslint": "^6.2.2",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "proxyquire": "^2.1.0"
+  }
+}
