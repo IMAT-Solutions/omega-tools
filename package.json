@@ -29,7 +29,7 @@
     "acorn": "^7.0.0",
     "debug": "^4.1.1",
     "keypress": "^0.2.1",
-    "less": "^3.9.0",
+    "less": "^3.13.1",
     "micromatch": "^4.0.2",
     "minimist": "^1.2.0",
     "node-watch": "^0.6.2",
