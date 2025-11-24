@@ -41,9 +41,9 @@
     "@babel/preset-env": "^7.4.5",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "chai": "^4.2.0",
-    "eslint": "^6.2.2",
-    "mocha": "^6.1.4",
-    "nyc": "^14.1.1",
+    "eslint": "^9.39.1",
+    "mocha": "^11.7.5",
+    "nyc": "^17.1.0",
     "proxyquire": "^2.1.0"
   }
 }
